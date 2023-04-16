@@ -9,7 +9,7 @@ var html = '';
   var all = [];
   numbers.forEach(function(number) {
     
-    fetch(`/surah/surah_${number}.json`)
+    fetch(`surah/surah_${number}.json`)
       .then(response => response.json())
         .then(data =>{                   
           all.push(data);   
